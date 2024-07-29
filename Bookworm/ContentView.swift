@@ -38,7 +38,8 @@ struct ContentView: View {
                         
                     }
                     
-                }
+                } //ForEach
+                .onDelete(perform: deleteBooks)
             }
                 .navigationTitle("Bookworm")
                 .toolbar{
@@ -47,6 +48,10 @@ struct ContentView: View {
                             showingAddScreen.toggle()
                         }
                     } //toolbarItem
+                    
+                    ToolbarItem(placement: .topBarLeading) {
+                        EditButton()
+                    }
                 } //toolbar
                 .sheet(isPresented: $showingAddScreen) {
                     AddBookView()
@@ -57,6 +62,16 @@ struct ContentView: View {
                 }
         } //NavigationStack
     } //body
+    
+    func deleteBooks(at offsets: IndexSet) {
+        for offset in offsets {
+            //find this book in our query
+            let book = books[offset]
+            
+            //delete it from the index
+            modelContext.delete(book)
+        }
+    }
 }
 
 #Preview {
