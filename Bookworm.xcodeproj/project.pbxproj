@@ -15,6 +15,7 @@
 		DE75E16B2C446A4D00E5421A /* AddBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE75E16A2C446A4D00E5421A /* AddBookView.swift */; };
 		DE75E16D2C45960A00E5421A /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE75E16C2C45960A00E5421A /* RatingView.swift */; };
 		DE75E16F2C45B2AF00E5421A /* EmojiRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE75E16E2C45B2AF00E5421A /* EmojiRatingView.swift */; };
+		DEB0FBC02C52D7C9003EA943 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB0FBBF2C52D7C9003EA943 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		DE75E16A2C446A4D00E5421A /* AddBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookView.swift; sourceTree = "<group>"; };
 		DE75E16C2C45960A00E5421A /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		DE75E16E2C45B2AF00E5421A /* EmojiRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiRatingView.swift; sourceTree = "<group>"; };
+		DEB0FBBF2C52D7C9003EA943 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,10 +65,11 @@
 				DE4BB20E2C3D9D5B00EC0D4A /* ContentView.swift */,
 				DE75E16A2C446A4D00E5421A /* AddBookView.swift */,
 				DE75E16C2C45960A00E5421A /* RatingView.swift */,
+				DE75E16E2C45B2AF00E5421A /* EmojiRatingView.swift */,
+				DEB0FBBF2C52D7C9003EA943 /* DetailView.swift */,
 				DE75E1682C4456A000E5421A /* Book.swift */,
 				DE4BB2102C3D9D5B00EC0D4A /* Assets.xcassets */,
 				DE4BB2122C3D9D5B00EC0D4A /* Preview Content */,
-				DE75E16E2C45B2AF00E5421A /* EmojiRatingView.swift */,
 			);
 			path = Bookworm;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 				DE4BB20F2C3D9D5B00EC0D4A /* ContentView.swift in Sources */,
 				DE4BB20D2C3D9D5B00EC0D4A /* BookwormApp.swift in Sources */,
 				DE75E1692C4456A000E5421A /* Book.swift in Sources */,
+				DEB0FBC02C52D7C9003EA943 /* DetailView.swift in Sources */,
 				DE75E16D2C45960A00E5421A /* RatingView.swift in Sources */,
 				DE75E16F2C45B2AF00E5421A /* EmojiRatingView.swift in Sources */,
 				DE75E16B2C446A4D00E5421A /* AddBookView.swift in Sources */,
