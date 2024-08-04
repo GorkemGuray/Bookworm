@@ -19,6 +19,15 @@ struct AddBookView: View {
     
     let genres = ["Fantasy", "Horror", "Kids", "Mystery", "Poetry", "Romance", "Thriller"]
     
+    var isAllAreaValid: Bool {
+        if title.isBlank || author.isBlank || rating<1 || review.isBlank {
+            return false
+        }
+            
+        return true
+            
+    }
+    
     var body: some View {
         NavigationStack {
             Form {
@@ -45,12 +54,21 @@ struct AddBookView: View {
                         modelContext.insert(newBook)
                         dismiss()
                     } //Button
+                    .disabled(isAllAreaValid == false)
                 } //Section-3
             } //Form
             .navigationTitle("Add Book")
         } //NavigationStack
     }
 }
+
+
+extension String {
+    var isBlank: Bool {
+        allSatisfy({$0.isWhitespace})
+    }
+}
+
 
 #Preview {
     AddBookView()
